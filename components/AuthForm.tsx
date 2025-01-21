@@ -58,7 +58,7 @@ export default function AuthForm({ type }: { type: string }) {
           email: data.email,
           password: data.password,
         });
-        if (res) router.push("/");
+        if (res) return router.push("/");
       }
     } catch (error) {
       console.log(error);
